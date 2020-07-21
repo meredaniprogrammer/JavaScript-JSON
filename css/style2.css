@@ -1,0 +1,131 @@
+/*Universal Selectors*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*Body font-color*/
+body {
+  font-family: "Poppins", sans-serif;
+  /* background: rgb(75, 0, 130); */
+  background: #7f00ff;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+/*Image styling for the json avatar images*/
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+/*Personal styling for the bootstrap container*/
+.container {
+  margin-top: 100px;
+  width: 75%;
+}
+/* Div container for the team member text and invite a new user button */
+.top-cont {
+  display: flex;
+  justify-content: space-between;
+}
+/*Styling for the "invite a new user" button*/
+.invite_user {
+  margin-bottom: 15px;
+  padding: 10px 9px 5px 9px;
+  border-radius: 5px;
+  border: none;
+  background: #f9ca24;
+  color: #fff;
+  font-weight: 600;
+}
+/*Styling for the "Team Member Text" which stays on top of the table */
+.members {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+/*Styling for the table row*/
+.table-row {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px;
+  height: 2px;
+  border-bottom: 8px solid #7f00ff;
+}
+
+/*Div for the table*/
+.table-color {
+  background: rgb(212, 211, 211);
+  /* border-radius: 8px; */
+}
+/*Styling for the button which shows that a developer is activated*/
+.col_data {
+  padding-top: 30px;
+}
+/*Styling for the contents of the button which shows that a team member is activated*/
+.button-activate {
+  padding: 8px 10px 3px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(33, 156, 33, 0.877);
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+/* .colorme {
+  background-color: rgb(247, 240, 255);
+} */
+.shift {
+  padding-top: 15px;
+}
+.fa-cog {
+  margin-right: -18px;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+  color: gray;
+  font-size: 23px;
+}
+
+/*Making the first and last names of each memeber bold*/
+td:nth-child(2) {
+  font-weight: 800;
+}
+/* This styling sets the color of the small drop down arrow to gray*/
+.btn {
+  color: gray;
+}
+/* By default, the .btn bootstrap has a box shadow, this styling sets it to none */
+.btn:focus {
+  box-shadow: none;
+}
+/* By default, the drop down btn color is pure blac, this style changes it to gray*/
+.btn:hover {
+  color: gray;
+}
+/*Foe the responsivess*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 40%;
+  }
+  .table {
+    width: 50%;
+  }
+  .top-cont {
+    display: flex;
+  }
+
+  .invite_user {
+    flex: 1;
+    font-size: 13px;
+  }
+  .members {
+    color: white;
+    font-size: 15px;
+  }
+}

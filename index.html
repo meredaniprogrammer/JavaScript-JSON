@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>Cyhermes Project 2</title>
+  </head>
+
+  <body>
+    <main>
+      <!--Presentation div-->
+      <section class="presentation">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1>Training Website</h1>
+            <p>for Developers</p>
+            <p>& Entrepreneurs</p>
+          </div>
+          <div class="login-handle">
+            <p class="login-message">
+              Welcome back, please login to your account
+            </p>
+            <!--Form for input and float label-->
+            <ul id="form-messages">
+              <li>Invalid login credentials!</li>
+            </ul>
+            <form
+              class="form"
+              id="myForm"
+              action="ajax-form-submit.php"
+              method="POST"
+            >
+              <div class="floating floating_first">
+                <!--Input field-->
+                <input
+                  id="input__email"
+                  class="floating__input"
+                  name="email"
+                  type="email"
+                  required
+                  value="creative.ui89@gmail.com"
+                  placeholder=""
+                />
+                <!--Label which holds the static placeholder-->
+                <label
+                  for="input__email"
+                  class="floating__label"
+                  data-content="Email Address"
+                ></label>
+              </div>
+              <!--Input for password-->
+              <div class="floating">
+                <input
+                  id="input__password"
+                  type="password"
+                  class="floating__input"
+                  name="password"
+                  placeholder=""
+                  required
+                  value="1234567899"
+                />
+                <label
+                  for="input__password"
+                  class="floating__label"
+                  data-content="Password"
+                  ><span class="hidden--visually">Password</span></label
+                >
+              </div>
+              <div class="checkbox">
+                <div class="box">
+                  <input type="checkbox" class="checkbox_content" /> Remember
+                  Me<br />
+                </div>
+                <div class="anchor">
+                  <a href="#" class="ach_tag">Forgot Passord?</a>
+                </div>
+              </div>
+            </form>
+
+            <!--My call to action buttons-->
+            <div class="cta">
+              <button class="cta-login" id="login">Login</button>
+              <button class="cta-signup">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="img/used_pic.jpg" alt="Training Websites image" />
+        </div>
+      </section>
+      <div class="empty_space"><br /><br /><br /><br /><br /></div>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
